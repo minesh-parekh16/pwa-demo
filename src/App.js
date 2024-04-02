@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
+import './App.css'; // You can keep your existing App.css if needed
 import axios from 'axios';
 
 function App() {
@@ -19,11 +19,11 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <h1>My PWA App</h1>
+    <div className='main-container'>
+      <h1 className="heading">My PWA App</h1> {/* Added className for styling */}
       <ul>
         {data?.map?.(item => (
-          <li key={item.id}>{item.title}</li>
+          <li key={item.id} className="list-item">{item.title}</li>
         ))}
       </ul>
     </div>
