@@ -18,8 +18,6 @@ function App() {
     fetchData();
   }, []);
 
-  console.log(data)
-
   return (
     <div>
       <h1>My PWA App</h1>

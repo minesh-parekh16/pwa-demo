@@ -50,7 +50,7 @@ registerRoute(
 // precache, in this case same-origin .png requests like those from in public/
 registerRoute(
   // Add in any other file extensions or routing criteria as needed.
-  ({ url }) => url.origin ===  'https://jsonplaceholder.typicode.com',
+  ({ url }) => console.log(url, 'minesh test'),
   new NetworkFirst(),
   new StaleWhileRevalidate({
     cacheName: 'images',
