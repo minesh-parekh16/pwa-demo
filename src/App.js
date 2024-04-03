@@ -6,6 +6,8 @@ import { useQuery } from '@tanstack/react-query';
 import googleImage from './sunset-1373171_1280.jpg';
 import googleImage1 from './tree-736885_1280.jpg';
 
+import Query from './query'
+
 function App() {
   const { isPending, error, data } = useQuery({
     queryKey: ['repoData'],
@@ -37,6 +39,18 @@ function App() {
         <span class="icon-home"></span>
         <span class="icon-pencil"></span>
       </div>
+      <Query keyName="example" fn={() => fetch('https://jsonplaceholder.typicode.com/posts').then((res) => res.json())}>
+        {({ data, isLoading }) => {
+          if (isLoading) return <h1>Loading</h1>;
+          return (
+            <ul>
+              {data?.map?.(item => (
+                <li key={item.id} className="list-item">{item.title}</li>
+              ))}
+            </ul>
+          );
+        }}
+      </Query>
     </div>
   );
 }
