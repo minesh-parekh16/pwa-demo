@@ -4,22 +4,22 @@ Create-React-App, a popular tool for setting up React projects, provides a seaml
 
 **Key takeaways from the resources shared include:**
 
--> **Service Worker Registration:** The Service Worker API enables offline functionality and background synchronization. Proper registration is crucial for PWAs to function correctly.
+-> **Service Worker Registration:** The Service Worker API enables offline functionality and background synchronization. Proper registration is crucial for PWAs to function correctly.                                                                                                                                                                                                    
 => **Reference Link:-** https://create-react-app.dev/docs/making-a-progressive-web-app
 
--> **HTTPS Requirement:** PWAs require secure origins to ensure data integrity and user trust. HTTPS is a prerequisite for Service Worker registration and PWA installation.
+-> **HTTPS Requirement:** PWAs require secure origins to ensure data integrity and user trust. HTTPS is a prerequisite for Service Worker registration and PWA installation.                                                                                                                                                                                                                      
 => **Reference Link:-** [https://create-react-app.dev/docs/making-a-progressive-web-app](https://github.com/cra-template/pwa/blob/main/packages/cra-template-pwa/template/src/serviceWorkerRegistration.js)
 
--> **Deployment Strategies:** Understanding deployment options is essential for launching PWAs successfully. Create-React-App offers guidance on deploying PWAs to various hosting platforms.
+-> **Deployment Strategies:** Understanding deployment options is essential for launching PWAs successfully. Create-React-App offers guidance on deploying PWAs to various hosting platforms.                                                                                                                                                                                                      
 => **Reference Link:-** [https://stackoverflow.com/questions/34160509/options-for-testing-service-workers-via-http/34161385#34161385](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API#you_need_https)
 
--> **API Backend Integration:** Integrating PWAs with backend APIs enhances functionality and enables dynamic data retrieval. This integration is vital for creating interactive and responsive applications.
+-> **API Backend Integration:** Integrating PWAs with backend APIs enhances functionality and enables dynamic data retrieval. This integration is vital for creating interactive and responsive applications.                                                                                                                                                                                                                                                                                                                                                                                
 => **Reference Link:-** https://create-react-app.dev/docs/deployment/
 
--> **Manifest File Configuration:** The manifest.json file defines PWA metadata like app name, icons, and display preferences. Proper configuration ensures a consistent user experience across devices.
+-> **Manifest File Configuration:** The manifest.json file defines PWA metadata like app name, icons, and display preferences. Proper configuration ensures a consistent user experience across devices.                                                                                                                                                                                                
 => **Reference Link:-** https://web.dev/articles/add-manifest
 
--> **Workbox Library:** Workbox, a set of libraries from Google, simplifies Service Worker management and offers caching strategies for optimizing PWA performance.
+-> **Workbox Library:** Workbox, a set of libraries from Google, simplifies Service Worker management and offers caching strategies for optimizing PWA performance.                                                                                                                                                                                                                               
 => **Reference Link:-** https://developer.chrome.com/docs/workbox/
 
 By delving into these resources and implementing the recommended practices, developers can unlock the full potential of PWAs created with Create-React-App. Embracing the principles of progressive enhancement and responsive design, PWAs built using these technologies can provide users with a seamless and engaging web experience.
@@ -28,19 +28,19 @@ In conclusion, the journey of crafting PWAs with Create-React-App is both reward
 
 ==> **Here I'm ataching some of useful links below.**
 
-1). https://stackoverflow.com/questions/34160509/options-for-testing-service-workers-via-http/34161385#34161385
-2). https://create-react-app.dev/docs/integrating-with-an-api-backend/
-3). https://www.newline.co/fullstack-react/articles/using-create-react-app-with-a-server/
-4). https://github.com/cra-template/pwa/blob/main/packages/cra-template-pwa/template/public/manifest.json
-5). https://github.com/cra-template/pwa/blob/main/packages/cra-template-pwa/template/public/manifest.json
-6). https://web.dev/explore/progressive-web-apps
-7). https://developer.chrome.com/docs/workbox/caching-strategies-overview
-8). https://developer.chrome.com/docs/workbox/caching-resources-during-runtime
-9). https://github.com/GoogleChrome/workbox
-10). https://developer.chrome.com/docs/workbox/modules
-11). https://developer.chrome.com/docs/workbox/modules/workbox-precaching
-12). https://developer.chrome.com/docs/workbox/the-ways-of-workbox/#using-a-bundler
-13). https://developer.chrome.com/docs/workbox/modules/workbox-precaching/
+1). https://stackoverflow.com/questions/34160509/options-for-testing-service-workers-via-http/34161385#34161385                                       
+2). https://create-react-app.dev/docs/integrating-with-an-api-backend/                                                                 
+3). https://www.newline.co/fullstack-react/articles/using-create-react-app-with-a-server/                                                  
+4). https://github.com/cra-template/pwa/blob/main/packages/cra-template-pwa/template/public/manifest.json                                   
+5). https://github.com/cra-template/pwa/blob/main/packages/cra-template-pwa/template/public/manifest.json                                                      
+6). https://web.dev/explore/progressive-web-apps                                                                              
+7). https://developer.chrome.com/docs/workbox/caching-strategies-overview                                          
+8). https://developer.chrome.com/docs/workbox/caching-resources-during-runtime                                                     
+9). https://github.com/GoogleChrome/workbox                                       
+10). https://developer.chrome.com/docs/workbox/modules                                                   
+11). https://developer.chrome.com/docs/workbox/modules/workbox-precaching                   
+12). https://developer.chrome.com/docs/workbox/the-ways-of-workbox/#using-a-bundler                                 
+13). https://developer.chrome.com/docs/workbox/modules/workbox-precaching/                                           
 
 ==> **To set up this project, please follow the steps below.**
 
