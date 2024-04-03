@@ -1,26 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import './App.css'; // You can keep your existing App.css if needed
-import axios from 'axios';
+import React from 'react';
+import './App.css';
+import { useQuery } from '@tanstack/react-query'
 
 function App() {
-  const [data, setData] = useState([]);
+  const { isPending, error, data } = useQuery({
+    queryKey: ['repoData'], queryFn: () => fetch('https://jsonplaceholder.typicode.com/posts').then((res) =>
+      res.json()),
+  })
 
-  const fetchData = async () => {
-    try {
-      const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
-      setData(response.data);
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
-  };
+  if (isPending) return 'Loading...'
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  if (error) return 'An error has occurred: ' + error.message
 
   return (
     <div className='main-container'>
-      <h1 className="heading">My PWA App</h1> {/* Added className for styling */}
+      <h1 className="heading">My PWA App</h1>
       <ul>
         {data?.map?.(item => (
           <li key={item.id} className="list-item">{item.title}</li>
