@@ -59,3 +59,16 @@
   flex-wrap: wrap;
   margin: 20px auto;
 }
+
+.images-static {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  gap: 10;
+  flex-direction: column;
+}
+.images-static img {
+  margin: 20px 0;
+}
