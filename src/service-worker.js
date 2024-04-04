@@ -21,6 +21,16 @@ registerRoute(
   new StaleWhileRevalidate()
 );
 
+// Listen for a message from the main thread to indicate new changes
+self.addEventListener('message', event => {
+  if (event.data && event.data.type === 'NEW_CHANGES') {
+    // Display an alert to notify the user to reload the page
+    self.registration.showNotification('New Changes Available', {
+      body: 'Please reload the page to apply the latest changes.'
+    });
+  }
+});
+
 // Event listener for push events
 self.addEventListener('push', event => {
   const payload = event.data ? event.data.text() : 'Default push notification';
