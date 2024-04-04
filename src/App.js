@@ -7,6 +7,7 @@ import googleImage from './sunset-1373171_1280.jpg';
 import googleImage1 from './tree-736885_1280.jpg';
 
 import Query from './query'
+import DoubleLineChart from './chart';
 
 function App() {
   const { isPending, error, data } = useQuery({
@@ -51,6 +52,7 @@ function App() {
           );
         }}
       </Query>
+      <DoubleLineChart />
     </div>
   );
 }
